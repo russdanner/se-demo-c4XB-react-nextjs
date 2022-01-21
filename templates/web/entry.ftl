@@ -25,8 +25,19 @@
 	<body>
 		<@crafter.body_top/>
 		<main>
-			<@crafter.h1 $field="title_t">${model.title_t}</@crafter.h1>
-			<@crafter.div $field="body_html">${model.body_html}</@crafter.div>
+			<h1>Readme</h1>
+			<ul>
+				<li>
+					In the Crafter CMS site sandbox directory, you'll find a directory called
+					app, which is the Next.JS app. Visit that directory on your terminal and run `yarn`
+				</li>
+				<li>Run `yarn dev` to start the node server on localhost:3000</li>
+				<li>Open Site Tools > Config</li>
+				<li>Select "Configuration"</li>
+				<li>Search "Proxy Config"</li>
+				<li>Comment line 58 and uncomment line 59</li>
+				<li>Close the pop up and refresh the page. You're now viewing the next.js application.</li>
+			</ul>
 		</main>
 		<@crafter.body_bottom/>
 	</body>
